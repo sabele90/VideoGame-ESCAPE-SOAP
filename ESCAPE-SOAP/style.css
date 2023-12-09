@@ -1,0 +1,206 @@
+
+
+* {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+}
+
+body {
+    background-image: url(./img/bathroom_background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;
+    position: relative;
+}
+
+#table {
+    /* borde */
+    background-color: #43C6FF;
+    background-image: url(./img/bubbles.png);
+    background-size: contain;
+    /* lo demás */
+    border-image-source: url(./img/espejo.jpg);
+    border-radius: 5px;
+    border-image-slice: 100%;
+    border-image-width: 5px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 200;
+    position: relative;
+    width: 720px;
+    height: 720px;
+    z-index: 0;
+}
+
+td {
+    height: 30px;
+    width: 30px;
+}
+
+.soap {
+    background-image: url(./img/soap_player.png);
+    background-size: 100%;
+}
+
+.safe-area {
+    background-image: url(./img/bubbles.gif);
+    background-size: 50px;
+}
+.row1 {
+    background-image: url(./img/bubbles.gif);
+    background-size: 50px;
+}
+
+.obs1 {
+    background-image: url(./img/red.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.obs2 {
+    background-image: url(./img/yellow.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.obs3 {
+    background-image: url(./img/purple.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.obs4 {
+    background-image: url(./img/green.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#bathroom {
+    background-image: url(./img/bathroom_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    margin-top: 50px;
+    opacity: 100%;
+}
+
+/* 
+#start-button {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+ */
+#start {
+    background-image: url(./img/start_display.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 100%;
+}
+
+.ending {
+    background-color: black;
+    text-align: center;
+    height: 100vw;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    background-image: url(./img/bubbles2.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    opacity: 100%;
+}
+#soapgo-gameover {
+    position: absolute;
+    text-align: justify;
+    top: 450px;
+}
+#soapgo-win {
+    position: absolute;
+    text-align: justify;
+    top: 350px;
+
+}
+.logo {
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    top: 350px;
+}
+
+
+
+
+
+.restart {
+    background: #c507c5;
+    border-bottom: 6px inset rgba(0, 0, 0, .5);
+    border-left: 6px inset rgba(0, 0, 0, .5);
+    border-right: 6px inset rgba(255, 255, 255, .5);
+    border-top: 6px inset rgba(255, 255, 255, .5);
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 20px;
+    position: absolute;
+    top: 700px;
+}
+
+.win {
+  
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/sparkles.gif),url(/img/universe_win.png);
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+
+
+
+}
+.logo-win {
+    color: white;
+    position: absolute;
+    text-align: center;
+    padding: 25px;
+}
+.hidden {
+    display: none;
+}
