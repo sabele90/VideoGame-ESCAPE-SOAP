@@ -1,5 +1,5 @@
 import { inGameMusic } from "./index.js";
-
+//hola
 function Soap(x, y) {
   var self = this;
   this.x = x;
@@ -34,8 +34,8 @@ function Soap(x, y) {
         soapCell.classList.add("soap");
         if (self.y === 1) {
           var win = document.querySelector(`.win`),
-            youWinGameSound = new Audio('./sound/you-win.mp3');
-          win.classList.remove('hidden');
+            youWinGameSound = new Audio("./sound/you-win.mp3");
+          win.classList.remove("hidden");
           inGameMusic.pause();
           youWinGameSound.play();
           youWinGameSound.volume = 0.1;
