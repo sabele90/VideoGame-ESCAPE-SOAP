@@ -15,11 +15,11 @@ body {
 }
 
 #table {
-    /* borde */
+    /* table */
     background-color: #43C6FF;
     background-image: url(./img/bubbles.png);
     background-size: contain;
-    /* lo demás */
+    /* border */
     border-image-source: url(./img/espejo.jpg);
     border-radius: 5px;
     border-image-slice: 100%;
@@ -30,7 +30,8 @@ body {
     position: relative;
     width: 720px;
     height: 720px;
-    z-index: 0;
+    z-index: -1;
+
 }
 
 td {
@@ -40,17 +41,15 @@ td {
 
 .soap {
     background-image: url(./img/soap_player.png);
-    background-size: 100%;
+    background-size: cover;
 }
 
-.safe-area {
-    background-image: url(./img/bubbles.gif);
-    background-size: 50px;
-}
+.safe-area ,
 .row1 {
     background-image: url(./img/bubbles.gif);
     background-size: 50px;
 }
+
 
 .obs1 {
     background-image: url(./img/red.png);
@@ -83,6 +82,7 @@ td {
     width: 100vw;
     height: 100vh;
     position: relative;
+    z-index: 0;
 }
 
 #bathroom {
@@ -112,7 +112,7 @@ td {
 .ending {
     background-color: black;
     text-align: center;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     z-index: 1;
     position: absolute;
@@ -128,12 +128,12 @@ td {
 #soapgo-gameover {
     position: absolute;
     text-align: justify;
-    top: 450px;
+    top: 350px;
 }
 #soapgo-win {
     position: absolute;
     text-align: justify;
-    top: 350px;
+    top: 250px;
 
 }
 .logo {
@@ -142,7 +142,7 @@ td {
     text-align: center;
     z-index: 1;
     padding: 20px;
-    top: 350px;
+    top: 250px;
 }
 
 .restart {
@@ -160,15 +160,14 @@ td {
     width: 250px;
     font-size: 20px;
     position: absolute;
-    top: 700px;
+    top: 600px;
 }
 
 .win {
-  
     z-index: 2;
     width: 100%;
     height: 100%;
-   background-image:url(./img/sparkles.gif), url(./img/universe_win.png);
+    background-image:url(./img/sparkles.gif), url(./img/universe_win.png);
     font-family: 'Press Start 2P', cursive;
     text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
     margin: 0;
@@ -183,12 +182,7 @@ td {
     opacity: 100%;
 
 }
-.logo-win {
-    color: white;
-    position: absolute;
-    text-align: center;
-    padding: 25px;
-}
+
 .hidden {
     display: none;
 }
